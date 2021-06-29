@@ -1,7 +1,7 @@
 import React from 'react'
 import { smart, actions } from '@gem-mine/durex'
 import { urlFor, Link, withRouter } from '@gem-mine/durex-router'
-import { Menu, Icon } from 'fish';
+import { Menu, Icon } from 'fish'
 import classNames from 'classnames'
 import config from '@/config/site'
 import menus from '@/config/menu'
@@ -12,10 +12,12 @@ import style from './style.module.less'
 const { SubMenu } = Menu
 
 function Item({ item }) {
-  return <>
-    <Icon type={item.icon} />
-    <span>{item.name}</span>
-  </>;
+  return (
+    <>
+      <Icon type={item.icon} />
+      <span>{item.name}</span>
+    </>
+  )
 }
 
 const callback = function (item) {
@@ -56,7 +58,7 @@ function generateMenu(menusConf) {
       }
       return <Menu.Item key={item.keyPath.join('-')}>{content}</Menu.Item>
     }
-  });
+  })
 }
 
 @smart(

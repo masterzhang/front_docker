@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import { Menu, Dropdown, Icon } from 'fish';
+import { Menu, Dropdown, Icon } from 'fish'
 import classNames from 'classnames'
 import intl from '@gem-mine/intl-react'
 import { LANGUAGE, saveLanguage } from '@/i18n/config'
@@ -29,6 +29,6 @@ export default class SelectLang extends PureComponent {
           <Icon type="global" title={intl.get('app.lang')} />
         </span>
       </Dropdown>
-    );
+    )
   }
 }

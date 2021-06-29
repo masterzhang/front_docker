@@ -1,6 +1,8 @@
 import React, { PureComponent } from 'react'
 import { smart, actions } from '@gem-mine/durex'
-import { Card, Tooltip, Spin, Image, Icon } from 'fish';
+import {
+  Card, Tooltip, Spin, Image, Icon
+} from 'fish'
 import InfiniteScroll from 'react-infinite-scroller'
 import style from './style.module.less'
 
@@ -58,10 +60,10 @@ class ListCard extends PureComponent {
               headStyle={{ width: '280px' }}
               actions={[
                 <Tooltip key="edit" title="编辑">
-                    <Icon type="edit" />
+                  <Icon type="edit" />
                 </Tooltip>,
                 <Tooltip key="delete" title="删除">
-                    <Icon type="delete" />
+                  <Icon type="delete" />
                 </Tooltip>
               ]}
             >
@@ -70,7 +72,7 @@ class ListCard extends PureComponent {
           ))}
         </InfiniteScroll>
       </div>
-    );
+    )
   }
 }
 

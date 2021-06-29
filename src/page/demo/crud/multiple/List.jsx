@@ -2,7 +2,9 @@ import React, { PureComponent } from 'react'
 import { Link, urlFor } from '@gem-mine/durex-router'
 import moment from 'moment'
 import { smart, actions } from '@gem-mine/durex'
-import { Table, Divider, Popconfirm, Tag, Button, Badge, Icon } from 'fish';
+import {
+  Table, Divider, Popconfirm, Tag, Button, Badge, Icon
+} from 'fish'
 import SearchForm from './SearchForm'
 import style from './style.module.less'
 
@@ -135,7 +137,7 @@ class Article extends PureComponent {
         </div>
         <Table rowKey="id" columns={this.columns} dataSource={list} pagination={pagination} onChange={this.handlePageChange} />
       </div>
-    );
+    )
   }
 }
 

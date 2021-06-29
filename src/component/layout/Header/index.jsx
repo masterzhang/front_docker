@@ -42,12 +42,12 @@ class Header extends PureComponent {
       <div className={style.header}>
         {config.sider ? (
           <span className={style.trigger} onClick={this.toggle}>
-              <Icon type={collapsed ? 'menu-unfold' : 'menu-fold'} />
+            <Icon type={collapsed ? 'menu-unfold' : 'menu-fold'} />
           </span>
         ) : null}
         <RightContent onMenuClick={this.handleMenuClick} />
       </div>
-    );
+    )
   }
 }
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Card, Icon } from 'fish';
+import { Button, Card, Icon } from 'fish'
 import Result from '@/component/status/Result'
 
 const extra = (
@@ -15,11 +15,11 @@ const extra = (
       您提交的内容有如下错误：
     </div>
     <div style={{ marginBottom: 16 }}>
-    <Icon style={{ color: '#f5222d', marginRight: 8 }} type="close-circle-o" />
+      <Icon style={{ color: '#f5222d', marginRight: 8 }} type="close-circle-o" />
       具体错误信息一
     </div>
     <div>
-    <Icon style={{ color: '#f5222d', marginRight: 8 }} type="close-circle-o" />
+      <Icon style={{ color: '#f5222d', marginRight: 8 }} type="close-circle-o" />
       具体错误信息二
     </div>
   </>

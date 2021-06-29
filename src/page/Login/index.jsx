@@ -35,26 +35,26 @@ class Login extends Component {
         {status === 'error' && this.renderMessage(errorMessage || intl.get('login.message-invalid-credentials'))}
         <Form onFinish={this.handleSubmit}>
           <FormItem
-              name="loginName"
-              rules={[{ required: true, message: intl.get('validation.userName.required') }]}
-            >
-              <Input
-                placeholder={`${intl.get('login.userName')}: 10009863@fishpro`}
-                size="large"
-                prefix={<Icon type="user" className={style.prefixIcon} />}
-              />
-            </FormItem>
-            <FormItem
-              name="password"
-              rules={[{ required: true, message: intl.get('validation.password.required') }]}
-            >
-              <Input
-                placeholder={`${intl.get('login.password')}: fishpro123`}
-                size="large"
-                prefix={<Icon type='lock' className={style.prefixIcon} />}
-                type="password"
-              />
-            </FormItem>
+            name="loginName"
+            rules={[{ required: true, message: intl.get('validation.userName.required') }]}
+          >
+            <Input
+              placeholder={`${intl.get('login.userName')}: 10009863@fishpro`}
+              size="large"
+              prefix={<Icon type="user" className={style.prefixIcon} />}
+            />
+          </FormItem>
+          <FormItem
+            name="password"
+            rules={[{ required: true, message: intl.get('validation.password.required') }]}
+          >
+            <Input
+              placeholder={`${intl.get('login.password')}: fishpro123`}
+              size="large"
+              prefix={<Icon type="lock" className={style.prefixIcon} />}
+              type="password"
+            />
+          </FormItem>
           <FormItem>
             <Button size="large" className={style.submit} type="primary" htmlType="submit">
               {intl.get('login.login')}

@@ -1,6 +1,8 @@
 import React, { PureComponent } from 'react'
 import { smart, actions } from '@gem-mine/durex'
-import { Button, Divider, Table, Popconfirm, Icon } from 'fish'
+import {
+  Button, Divider, Table, Popconfirm, Icon
+} from 'fish'
 import { modal } from '@/util/crud'
 import SearchForm from './SearchForm'
 import CreateForm from './CreateForm'
@@ -33,7 +35,7 @@ class ListModal extends PureComponent {
             <Icon type="woman" />
             女
           </span>
-        ][sex];
+        ][sex]
       }
     },
     {
@@ -103,23 +105,25 @@ class ListModal extends PureComponent {
       total
     }
 
-    return <>
-      <div>
-        <SearchForm />
-        <div className={style.tableListOperator}>
-          <Button icon={<Icon type="plus" />} type="primary" onClick={this.showCreateModal}>
-            新增
-          </Button>
+    return (
+      <>
+        <div>
+          <SearchForm />
+          <div className={style.tableListOperator}>
+            <Button icon={<Icon type="plus" />} type="primary" onClick={this.showCreateModal}>
+              新增
+            </Button>
+          </div>
+          <Table rowKey="id" columns={this.columns} dataSource={list} pagination={pagination} onChange={this.handlePageChange} />
         </div>
-        <Table rowKey="id" columns={this.columns} dataSource={list} pagination={pagination} onChange={this.handlePageChange} />
-      </div>
-      <CreateForm visible={this.state.createModalVisible} handleHide={this.hideCreateModal} />
-      <UpdateForm
-        data={{ ...this.state.data }}
-        visible={this.state.updateModalVisible}
-        handleHide={this.hideUpdateModal}
-      />
-    </>;
+        <CreateForm visible={this.state.createModalVisible} handleHide={this.hideCreateModal} />
+        <UpdateForm
+          data={{ ...this.state.data }}
+          visible={this.state.updateModalVisible}
+          handleHide={this.hideUpdateModal}
+        />
+      </>
+    )
   }
 }
 

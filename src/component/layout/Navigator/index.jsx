@@ -1,5 +1,5 @@
 import React from 'react'
-import { Breadcrumb, Icon } from 'fish';
+import { Breadcrumb, Icon } from 'fish'
 import { actions } from '@gem-mine/durex'
 import { getRouteByUrlPath, withRouter } from '@gem-mine/durex-router'
 import intl from '@gem-mine/intl-react'
