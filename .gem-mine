@@ -1,0 +1,11 @@
+{
+  "version": "2.1.3",
+  "template_id": "f46944e9-a51f-4f49-a614-cd923903baab",
+  "name": "demo",
+  "path": "/Users/zhanghuayan/Desktop/docker-demo/demo",
+  "env": "{\"cli_version\":\"2.19.6\",\"npm_version\":\"6.12.0\",\"node_version\":\"v12.13.0\"}",
+  "user": "张华焱",
+  "email": "448158404@qq.com",
+  "choice": "{\"templateId\":\"f46944e9-a51f-4f49-a614-cd923903baab\",\"features\":[\"lintBeforeCommit\",\"jest\"],\"ui\":\"fish\",\"demo\":true,\"sdp\":false}",
+  "project_id": "044f16d0-d8be-11eb-a48c-9107ac673fc0_1624959619261"
+}

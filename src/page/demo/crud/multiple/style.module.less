@@ -1,0 +1,37 @@
+@import '~fish/lib/style/themes/default.less';
+
+.publishBtnCtn {
+  text-align: center;
+}
+
+.tableListOperator {
+  margin: 16px 0;
+}
+
+.formLabel {
+  line-height: 40px;
+  margin-right: 20px;
+}
+
+.formItemContain {
+  position: relative;
+
+  .publishTime {
+    width: 100%;
+    line-height: inherit;
+  }
+
+  .expandOperator {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    cursor: pointer;
+    user-select: none;
+  }
+}
+
+.SearchForm{
+  :global(.fish-form-item) {
+    margin-bottom: 10px;
+  }
+} 

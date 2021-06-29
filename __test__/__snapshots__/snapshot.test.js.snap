@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error renderer 1`] = `
+<div
+  className="dashboard"
+>
+  <div
+    className="logo"
+  />
+  <div
+    className="welcome"
+  >
+    <span
+      className="name"
+    >
+      Fish Pro
+    </span>
+    <span>
+      一个更好的后台管理系统
+    </span>
+  </div>
+  <div
+    className="team"
+  >
+    WEB 端公共能力团队
+  </div>
+</div>
+`;

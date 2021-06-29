@@ -1,0 +1,62 @@
+@import '~fish/lib/style/themes/default.less';
+
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: @body-background;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  overflow: auto;
+
+  :global {
+    .fish-list-item {
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+
+    .fish-list-split .fish-list-item:last-child {
+      border-bottom: 1px solid #e8e8e8;
+    }
+  }
+
+  .leftmenu {
+    float: left;
+    width: 224px;
+    height: 100%;
+
+    .menuUl {
+      height: 100%;
+    }
+
+    :global {
+      .fish-menu-inline {
+        border: none;
+      }
+
+      .fish-menu:not(.fish-menu-horizontal) .fish-menu-item-selected {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .right {
+    float: left;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .main {
+    .leftmenu {
+      width: 100%;
+      border: none;
+    }
+
+    .right {
+      padding: 40px;
+    }
+  }
+}
